@@ -1,0 +1,13 @@
+name: DemoVTwo
+run-name: ${{github.actor}} has pushed
+on: [push]
+
+jobs:
+  Demo-Extension:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+      - run: echo "${{ github.repository}}"
+      - name: List Files
+        run: ls ${{github.workspace}}
