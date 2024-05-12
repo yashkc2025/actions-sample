@@ -1,0 +1,9 @@
+name: Base Action
+run-name: Sample Action
+on: [push]
+
+jobs:
+  Explore-Action:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Something was pushed!"
